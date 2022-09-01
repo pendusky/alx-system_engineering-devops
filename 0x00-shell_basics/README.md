@@ -7,3 +7,4 @@ list more hidden files
 Display current directory contents.
 Create a script that creates a directory named my_first_directory in the /tmp/ directory.
 Move that file
+Delete the file betty.

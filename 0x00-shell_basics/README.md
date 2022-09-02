@@ -10,3 +10,4 @@ Move that file
 Delete the file betty.
 Delete the directory my_first_directory that is in the /tmp directory.
 Remove file betty
+Delete first directory

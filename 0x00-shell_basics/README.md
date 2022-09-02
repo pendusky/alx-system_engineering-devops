@@ -9,3 +9,4 @@ Create a script that creates a directory named my_first_directory in the /tmp/ d
 Move that file
 Delete the file betty.
 Delete the directory my_first_directory that is in the /tmp directory.
+Remove file betty

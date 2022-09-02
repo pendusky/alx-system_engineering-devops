@@ -1,1 +1,1 @@
-chmod ugo+x hello
+chmod 007 hello

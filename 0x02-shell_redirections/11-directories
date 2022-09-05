@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -Ra|find . ! -name "." -type d | wc -l

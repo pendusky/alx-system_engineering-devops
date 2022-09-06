@@ -13,3 +13,8 @@ Global variables
 mandatory
 
 Create a script that lists environment variables.
+Local variables
+
+mandatory
+
+Create a script that lists all local variables and environment variables, and functions.

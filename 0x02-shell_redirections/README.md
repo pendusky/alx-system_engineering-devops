@@ -13,3 +13,8 @@ Write a script that writes into the file ls_cwd_content the result of the comman
 echo Write a script that duplicates the last line of the file iacta The file iacta will be in the working directory
 Dont just count your directories, make your directories count 
 Create a script that displays the 10 newest files in the current directory.
+Create a script that takes a list of words as input and prints only words that appear exactly once.
+
+
+
+

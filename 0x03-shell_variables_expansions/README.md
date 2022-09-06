@@ -23,3 +23,8 @@ Create a script that lists all local variables and environment variables, and fu
 mandatory
 
 Create a script that creates a new local variable.
+Create a script that creates a new global variable.
+
+
+
+Name: BEST

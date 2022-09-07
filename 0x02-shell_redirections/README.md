@@ -35,3 +35,4 @@ Write a script that parses web servers logs in TSV format as input and displays 
 Write a script that displays a confused smiley
 Write a script that displays a confused smiley
 no 10 Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders
+Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd

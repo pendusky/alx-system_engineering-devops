@@ -34,3 +34,4 @@ Write a script that parses web servers logs in TSV format as input and displays 
 (Checks completed: 0.00%)
 Write a script that displays a confused smiley
 Write a script that displays a confused smiley
+no 10 Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders

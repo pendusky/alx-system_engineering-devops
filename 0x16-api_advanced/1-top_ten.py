@@ -1,20 +1,19 @@
 #!/usr/bin/python3
-# get subs
-from requests import get
-from sys import argv
+"""A function that queries Reddit API and returns top ten hot post"""
 
+import json
+import requests
 
 def top_ten(subreddit):
-    """subs"""
-    head = {'User-Agent': 'Dan Kazam'}
-    try:
-        count = get('https://www.reddit.com/r/{}/hot.json?count=10'.format(
-            subreddit), headers=head).json().get('data').get('children')
-        print('\n'.join([dic.get('data').get('title')
-                         for dic in count][:10]))
-    except:
-        print('None')
+    """This func. takes one parameter"""
 
+    url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
+    headers = {"User-Agent": "Custom User Agent"}
 
-if __name__ == "__main__":
-    top_ten(argv[1])
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        data = response.json()['data']['children']
+        for post in data:
+            print(post['data']['title'])
+        else:
+            print(None)

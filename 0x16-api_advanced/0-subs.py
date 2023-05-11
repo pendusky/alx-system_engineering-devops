@@ -1,18 +1,19 @@
 #!/usr/bin/python3
-# get subs
-from requests import get
-from sys import argv
+"""A func. that queries Reddit API and returns num. of Subs"""
 
+import json
+import requests
+import sys
 
 def number_of_subscribers(subreddit):
-    """subs"""
-    head = {'User-Agent': 'Dan Kazam'}
-    count = get('https://www.reddit.com/r/{}/about.json'.format(
-        subreddit), headers=head).json()
-    try:
-        return count.get('data').get('subscribers')
-    except:
-        return 0
+    """This func. takes one parameter"""
 
-if __name__ == "__main__":
-    number_of_subscribers(argv[1])
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    headers = {"User-Agent": "Custom"}
+
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        data = response.json()['data']['subscribers']
+        return data
+    else:
+        return 0
